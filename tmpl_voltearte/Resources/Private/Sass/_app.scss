@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+// This includes vendor css files
+@import
+	"vendor/whitney-font",
+	"vendor/foundation-related/foundation-icons";
+
+* {
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 0 1px transparent;
+}
+a, a:visited, a:hover {
+	text-decoration: none;
+}
+@font-face {
+	font-family: 'NoteThis';
+	src: url('../../Public/Fonts/Notethis.ttf');
+}
+body {
+	background: url("../../Public/Images/body.png") repeat scroll left top transparent;;
+	font-family: 'Whitney SSm A','Whitney SSm 5r',Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	min-height: 671px;
+}
+.sticky {
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+}
+.top-bar-section>ul>.divider {
+	border-right: solid 1px white;
+}
+object {
+	margin-bottom: 28px;
+}
+#logo {
+	margin: 12px 0 20px 0;
+}
+.portada {
+	padding-left: 20px;
+}
+.inner-wrap {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d8d8d8;
+	margin-bottom: 1.25rem;
+	padding: 1.25rem;
+	background: #ffffff;
+}
+[class*="fi-"] {
+	padding-right: 11px;
+}
+[class*="fi-social-"] {
+	vertical-align: -2px;
+}
+.fi-left-arrow {
+	color: #231F20;
+	font-size: 26px;
+	&:hover {
+		color: #1A8BAB;
+	}
+}
+.fi-calendar {
+	color: #231F20;
+	font-size: 22px;
+	vertical-align: -5px;
+}
+.fi-mail, .fi-paper-clip {
+	vertical-align: -3px;
+}
+.top-bar-section ul li.active a, .top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #008cba;
+}
+.breadcrumbs li {
+	&:first-child a {
+		background: url("../../Public/Images/home.png") no-repeat scroll 0px 0px transparent;
+		padding-left: 20px;
+	}
+	span {
+		color: #333;
+	}
+}
+.submenu {
+	margin-bottom: rem-calc(20);
+}
+.orbit-bullets li {
+	display: none;
+}
+.panel.callout {
+	border-color: #dcdcdc;
+	background-color: #F4F4F4;
+	margin-bottom: 4px;
+}
+.panel.callout.active {
+	background-color: #fff;
+}
+[class*="small-block-grid-"] {
+	padding: 1px 0 0 1px;
+}
+.news .article, .news .news-article {
+	font-weight: 400;
+	font-size: 16px;
+	font-family: "Whitney SSm A", sans-serif;
+	p {
+		margin-top: 1.25rem;
+	}
+}
+.news-list-category {
+	margin-bottom: 10px;
+	a.th {
+		margin-right: 6px;
+		height: 56px;
+	}
+}
+.news-single [class*="related-"], .news-single .facebook {
+	margin-bottom: 15px;
+}
+.news-single .date {
+	margin-bottom: 10px;
+}
+.like {
+	float: left;
+	padding-right: 15px;
+}
+article.news-article {
+	margin-bottom: 25px;
+	h4, h5 {
+		margin-bottom: 0;
+	}
+	h5 {
+		margin-top: 8px;
+	}
+	.panel, .news-single .panel {
+		background-color: #F2F2F2;
+		padding: 8px;
+	}
+}
+ul.csc-uploads span {
+	display: inline;
+}
+.tx-powermail .row .large-offset-3 {
+	margin-left: 23.40%;
+}
+form {
+	textarea {
+		height: auto;
+		resize: none;
+	}
+	span.mandatory {
+		color: red;
+	}
+}
+footer {
+	font-size: 15px;
+	padding: 15px 10px 0px 10px;
+	background-color: #383838;
+	color: #fff;
+	.social-icons {
+		a.link {
+			font-size: 44px;
+			color: lighten(#2ba6cb, 40%);
+			&:hover {
+				color: lighten(#2ba6cb, 15%);
+			}
+		}
+		a.link.twitter {
+			display: block;
+			float: left;
+			margin-right: 20px;
+		}
+		#wt_twitter_newsticker {
+			font-size: 13px;
+			line-height: 16px;
+		}
+	}
+	.intro, .twitter, .design {
+		font-size: 12px;
+	}
+}
+.tb1, .tb2, .tb3, .tb4 {
+	display: block;
+	width: 200px;
+	height: 200px;
+	/*padding: 12px;*/
+	/*position: relative;
+	  float: left;*/
+	/*margin-left: 12px;
+	margin-top: 12px;*/
+	img {
+		display: none;
+	}
+}
+.tb1 {
+	background: url("../Images/raquel-carpio.png") no-repeat scroll 0px 0px transparent;
+	&:hover {
+		background: url("../Images/raquel-carpio.png") no-repeat scroll 0px -200px transparent;
+	}
+}
+.tb2 {
+	background: url("../Images/sergio-pla.png") no-repeat scroll 0px 0px transparent;
+	&:hover {
+		background: url("../Images/sergio-pla.png") no-repeat scroll 0px -200px transparent;
+	}
+}
+.tb3 {
+	background: url("../Images/vicky-terradez.png") no-repeat scroll 0px 0px transparent;
+	&:hover {
+		background: url("../Images/vicky-terradez.png") no-repeat scroll 0px -200px transparent;
+	}
+}
+.tb4 {
+	background: url("../Images/angel-sanchez.png") no-repeat scroll 0px 0px transparent;
+	&:hover {
+		background: url("../Images/angel-sanchez.png") no-repeat scroll 0px -200px transparent;
+	}
+}
+a.tb-name {
+	font-family: 'NoteThis', sans-serif;
+	font-size: 28px;
+	display: block;
+}
+a.tb4-name {
+	margin-left: 22px;
+}
+a.tb1-name {
+	margin-left: 26px;
+}
+a.tb2-name {
+	margin-left: 46px;
+}
+a.tb3-name {
+	margin-left: 20px;
+}
+.select2-result-label, .select2-search-choice div {
+	font-size: 0.8em;
+}
+.select2-container-multi .select2-choices {
+	border: 1px solid #cccccc;
+}
+.select2-container-multi.select2-container-active .select2-choices {
+	border: 1px solid #999999;
+	background-color: #fafafa;
+}
+.select2-drop.select2-drop-above.select2-drop-active, .select2-drop-active {
+	border: 1px solid #999999;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+	margin: -2px 0px;
+}
+// set default elements to paragraph style
+/*figure, figcapture, td, th{
+	font-family: $paragraph-font-family;
+	font-size: $paragraph-font-size;
+	line-height: $paragraph-line-height;
+}*/
+
+/**
+* fix boxing for fancybox http://jsfiddle.net/ut93u/
+**/
+#fancybox-wrap, #fancybox-wrap * {
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+div.csc-textpic {
+	overflow: visible;
+}
+object.vimeo {
+	//@include thumb;
+}
+td._51m-.pls._51mw {
+	display: none !important;
+}

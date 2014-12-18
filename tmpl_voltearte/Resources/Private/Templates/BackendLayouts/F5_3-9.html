@@ -1,0 +1,23 @@
+<f:layout name="DefaultLayout" />
+
+<f:section name="content">
+	<div class="inner-wrap">
+		<div class="row">
+			<div class="small-12 large-3 columns">
+				<div class="submenu">
+					<f:cObject typoscriptObjectPath="lib.submenu" />
+				</div>
+			</div>
+			<div class="small-12 large-9 columns">
+				<f:cObject typoscriptObjectPath="lib.breadcrumbs"/>
+				<h3>
+					<f:cObject typoscriptObjectPath="lib.title"/>
+				</h3>
+				<hr>
+				<article>
+					<f:cObject typoscriptObjectPath="lib.getContent" currentValueKey="colPos" data="{colPos: '0'}" />
+				</article>
+			</div>
+		</div>
+	</div>
+</f:section>

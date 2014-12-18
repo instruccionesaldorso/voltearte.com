@@ -1,0 +1,21 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+{namespace tv=Voltearte\TmplVoltearte\ViewHelpers}
+
+<div class="row">
+	<div class="small-12 large-3 columns">
+		<label for="powermail_field_{field.marker}" class="right inline">
+			<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+		</label>
+	</div>
+	<div class="small-12 large-9 columns">
+		<f:form.textfield
+			id="powermail_field_{field.marker}"
+			property="{field.marker}"
+			value="{vh:Misc.PrefillField(field: '{field}')}"
+			class="powermail_field powermail_input"
+			additionalAttributes="{tv:abideValidation(field:'{field}')}"
+			placeholder="{field.title -> vh:string.RawAndRemoveXss()}"
+		/>
+		<small class="error"><f:translate key="LLL:EXT:tmpl_voltearte/Resources/Private/Language/locallang.xml:validationerror_mandatory"/></small>
+	</div>
+</div>

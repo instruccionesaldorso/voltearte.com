@@ -1,0 +1,22 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div class="row">
+	<div class="small-12 large-3 columns">
+		<label for="powermail_field_{field.marker}" class="right inline">
+			<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+		</label>
+	</div>
+	<div class="small-12 large-9 columns">
+		<vh:Form.SelectField
+			options="{field.modifiedSettings}"
+			name="{field.marker}"
+			multiple="multiple"
+			property="{field.marker}"
+			class="powermail_field powermail_select {vh:Validation.ErrorClass(field: '{field}', class: 'powermail_field_error')}"
+			id="powermail_field_{field.marker}"
+			additionalAttributes="{vh:Validation.ValidationDataAttribute(field: '{field}')}"
+			value="{vh:Misc.PrefillField(field: '{field}')}"
+			/>
+		<small class="error"><f:translate key="LLL:EXT:tmpl_voltearte/Resources/Private/Language/locallang.xml:validationerror_mandatory"/></small>
+	</div>
+</div>

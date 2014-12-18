@@ -1,0 +1,17 @@
+<!-- categories -->
+<span class="news-list-category">
+	<i class="social foundicon-slideshare"></i>
+	<f:for each="{categories}" as="category">
+
+		<f:if condition="{category.shortcut}">
+			<f:then>
+				<f:link.page pageUid="{category.shortcut}" class="th radius">
+					<f:image image="{category.images.0}" />
+				</f:link.page>
+			</f:then>
+			<f:else>
+				<f:image image="{category.images.0}" />
+			</f:else>
+		</f:if>
+	</f:for>
+</span>

@@ -1,0 +1,741 @@
+body {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+code {
+	background-color: transparent;
+}
+
+table {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #A2AAB8;
+	font-size: 100%;
+}
+
+table.nowrap {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #A2AAB8;
+}
+
+thead td, thead th, thead tr:hover td, thead tr:hover th, .js .checkable thead .checked td, .js .checkable thead .checked th {
+	background-color: #666666;
+	color: #FFFFFF;
+	padding: 6px;
+}
+
+tr {
+	background-color: #FFFFFF;
+}
+
+tr.odd {
+	background-color: #F7F7F7;
+}
+
+td, th {
+	border: medium none;
+	background: none;
+	min-height: 16px;
+	padding: 6px;
+	vertical-align: baseline;
+}
+
+.js .checkable .checked td, .js .checkable .checked th {
+    background-color: #DADADA;
+}
+
+.active {
+	font-weight: normal;
+}
+
+tbody tr:hover td, tbody tr:hover th {
+	background-color: #DEDEDE;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover, a:link:hover, a:visited:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+a:active {
+	color: black;
+	text-decoration: underline;
+}
+
+form table.nowrap a[href*="edit="][href*="&where"] {
+	position: relative;
+	left: 4px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+form table.nowrap a[href*="edit="][href*="&where"]:hover {
+	text-decoration: none;
+}
+
+table.nowrap a[href*="edit="][href*="&where"]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/actions/document-open.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+
+table.nowrap thead th a, table.nowrap thead td a, table.nowrap thead th a:hover, table.nowrap thead td a:hover, table.nowrap thead th a:link:hover, table.nowrap thead td a:link:hover, table.nowrap thead th a:visited:hover, table.nowrap thead td a:visited:hover {
+	color: white;
+}
+
+table.nowrap input[type=image][name^=add] {
+    height: 16px;
+    padding-left: 16px;
+    width: 0;
+    background: url("/typo3/sysext/t3skin/images/icons/actions/document-new.png") repeat scroll 0 0 transparent;
+}
+
+table.nowrap input[type=image][name^=up] {
+    height: 16px;
+    padding-left: 16px;
+    width: 0;
+    background: url("/typo3/sysext/t3skin/images/icons/actions/move-up.png") repeat scroll 0 0 transparent;
+}
+
+table.nowrap input[type=image][name^=down] {
+    height: 16px;
+    padding-left: 16px;
+    width: 0;
+    background: url("/typo3/sysext/t3skin/images/icons/actions/move-down.png") repeat scroll 0 0 transparent;
+}
+
+table.nowrap input[type=image][name^=drop_col] {
+    height: 16px;
+    padding-left: 16px;
+    width: 0;
+    background: url("/typo3/sysext/t3skin/images/icons/actions/edit-delete.png") repeat scroll 0 0 transparent;
+}
+
+input[type=image][name^=add] {
+	height: 16px;
+	padding-left: 16px;
+	width: 0;
+	background: url("/typo3/sysext/t3skin/images/icons/actions/edit-add.png") repeat scroll 0 0 transparent;
+}
+
+p#breadcrumb {
+	border: medium none;
+}
+
+p#breadcrumb a {
+	color: #FFFFFF;
+}
+
+#menu {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 270px;
+	padding: 0;
+	background-color: #EBEBEB;
+	background-repeat: repeat-y;
+	background-position: right center;
+}
+
+#menu form[method*="post"] {
+	background-color: #DADADA;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAGElEQVR42gENAPL/ALi4uEy4uLi0uLi4/zSECHijpwMGAAAAAElFTkSuQmCC");
+	background-repeat: repeat-y;
+	background-position: right center;
+    height: 22px;
+}
+
+#menu p {
+	margin: 0;
+	padding: 4px 10px;
+	border: medium none;
+}
+
+#menu p select {
+	width: auto;
+}
+
+#menu p#dbs {
+	background-color: #DADADA;
+	height: 16px;
+	padding: 3px 10px;
+}
+
+#menu h1 {
+	height: 27px;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 23px;
+	display: block;
+	background-color: #585858;
+	color: #FFFFFF;
+	font-size: 10px;
+	border: medium none;
+	background-color: #585858;
+}
+
+#menu h1 a {
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+#menu h1 .version {
+	font-size: 9px;
+	color: #FFFFFF;
+}
+
+#menu * {
+	margin: 0;
+	padding: 0;
+}
+
+p#tables {
+	margin: 0;
+	position: absolute;
+	top: 80px;
+	bottom: 0;
+	left: 0;
+	padding: 0 0 0 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 265px;
+	line-height: 18px;
+	background-color: #EBEBEB;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAGElEQVR42gENAPL/AMjIyEzIyMizyMjI/zhvCQelaHPPAAAAAElFTkSuQmCC");
+	background-repeat: repeat-y;
+	background-position: right center;
+}
+
+p#tables a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	margin-top: 1px;
+	top: 0;
+    background-color: transparent;
+}
+
+p#tables span {
+	background-color: transparent;
+}
+
+p#tables a[href*="select="] {
+	position: absolute;
+	left: 10px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+p#tables a[href*="select="]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/actions/system-list-open.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+p#tables a[href*="table="] {
+	position: absolute;
+	left: 36px;
+	width: 200px;
+}
+
+p#tables span.tables-line {
+	display: list-item;
+	border: 1px solid transparent;
+	position: relative;
+    height: 18px;
+    list-style: none;
+}
+
+p#tables span.tables-line-active {
+	display: list-item;
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #D7D7D7;
+	border-left: 1px solid #D7D7D7;
+	border-top: 1px solid #D7D7D7;
+	position: relative;
+}
+
+p#tables span.tables-line:hover {
+	border-bottom: 1px solid #D7D7D7;
+	border-left: 1px solid #D7D7D7;
+	border-top: 1px solid #D7D7D7;
+	background-color: #F2F2F2;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAGElEQVR42gENAPL/AMjIyEzIyMizyMjI/zhvCQelaHPPAAAAAElFTkSuQmCC");
+	background-position: right center;
+	background-repeat: repeat-y;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+#menu p.links a[href*="sql="] {
+	position: absolute;
+	left: 10px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+#menu p.links a[href*="sql="]:before {
+	content: "\00a0";
+	background-image: url("../Resources/Public/Images/sql.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#menu p.links a[href*="import="] {
+	position: absolute;
+	left: 28px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+#menu p.links a[href*="import="]:before {
+	content: "\00a0";
+	background-image: url("../Resources/Public/Images/database_go.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#menu p.links a[href*="dump="] {
+	position: absolute;
+	left: 46px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+#menu p.links a[href*="dump="]:before {
+	content: "\00a0";
+	background-image: url("../Resources/Public/Images/database_save.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#menu p.links a[href*="create="] {
+	position: absolute;
+	left: 64px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+#menu p.links a[href*="create="]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/actions/document-new.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#content a[href*="refresh="] {
+	position: relative;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	height: 16px;
+	top: 2px;
+}
+
+#content a[href*="refresh="]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/actions/system-refresh.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#content a[href*="dbsize="] {
+	position: relative;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	height: 16px;
+	top: 2px;
+}
+
+#content a[href*="dbsize="]:before {
+	content: "\00a0";
+	background-image: url("../Resources/Public/Images/calculator.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+#lang {
+	top: 1px;
+	right: 18px;
+	left: auto;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	color: #FFFFFF;
+}
+
+#lang select {
+	height: 18px;
+}
+
+.icon {
+	border: medium none;
+}
+
+#content {
+	margin: 0;
+	padding: 0 10px 10px 10px;
+	position: absolute;
+	left: 270px;
+	right: 0;
+	top: 49px;
+	bottom: 0;
+	overflow: auto;
+}
+
+#content table tr:nth-child(2n) td, #content table tr:nth-child(2n) th {
+	background-color: #F7F7F7;
+}
+
+#content table.checkable tr.checked:nth-child(2n) td, #content table.checkable tr.checked:nth-child(2n) th {
+	background-color: #DADADA;
+}
+
+#content table tbody tr:hover td, #content table tbody tr:hover th {
+	background-color: #DEDEDE;
+}
+
+#content h2 {
+	display: block;
+	margin: 0;
+	height: 16px;
+	position: fixed;
+	left: 270px;
+	right: 0;
+	top: 27px;
+	line-height: 22px;
+	padding: 0 0 6px 10px;
+	background-color: #DADADA;
+	font-size: 12px;
+	border: medium none;
+	font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+	color: #555555;
+	font-weight: bold;
+}
+
+h3 {
+	border-bottom: 1px solid #CDCDCD;
+	padding-bottom: 6px;
+}
+
+#breadcrumb {
+	position: fixed;
+	left: 270px;
+	right: 0;
+	top: 0;
+	height: 27px;
+	margin: 0;
+	border-bottom: 1px solid #999;
+	background-color: #585858;
+	color: #FFFFFF;
+    line-height: 22px;
+}
+
+input, textarea, select, button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	background-color: #FEFEFE;
+}
+
+input, textarea, button {
+	border: 1px solid #7C7C7C;
+	border-radius: 2px;
+	padding: 3px 6px;
+}
+
+select {
+	border: 1px inset #7C7C7C;
+}
+
+input.default {
+	box-shadow: none;
+}
+
+input:focus, textarea:focus, button:focus {
+	border-color: #32A0FF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset, 0 0 6px rgba(50, 160, 255, 0.6);
+	outline: 0 none;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"] {
+	border: 1px solid #7C7C7C;
+	color: #434343;
+	cursor: pointer;
+	text-decoration: none !important;
+	white-space: nowrap;
+	height: 19px;
+	margin-left: 5px;
+	padding: 0 4px 2px;
+	background-color: #E0E0E0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+input[type="image"] {
+	padding: 0;
+}
+
+input[type="file"] {
+	border: medium none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	border: medium none;
+	background-color: transparent;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+	background-color: #CCCCCC;
+	text-decoration: none !important;
+	color: #000000;
+	cursor: pointer;
+}
+
+#menu input[type="submit"], #menu input[type="button"], #menu input[type="reset"] {
+	padding: 0 4px 2px;
+	margin-left: 5px;
+}
+
+#menu .message, #menu .error, #content .message, #content .error {
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	border: 1px solid;
+	margin-bottom: 4px;
+	padding: 12px 12px 12px 36px;
+}
+
+#menu .message, #content .message {
+	background-color: #EAF7FF;
+	background-image: url("/typo3/sysext/t3skin/icons/gfx/information.png");
+	border-color: #C5DBE6;
+	color: #4C73A1;
+}
+
+#menu .error, #content .error {
+	background-color: #F6D3CF;
+	background-image: url("/typo3/sysext/t3skin/icons/gfx/error.png");
+	border-color: #D66C68;
+	color: #AA0225;
+}
+
+#menu .error, #menu .message {
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+#loader {
+	top: 2em;
+	left: 59em;
+}
+
+#content h2+p.links, p.tabs {
+	border-bottom: 1px solid #ADADAD;
+	padding: 3px 0 4px 10px;
+}
+
+#content h2+p.links a, p.tabs a {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: none repeat scroll 0 0 #DADADA;
+	border-color: #ADADAD #ADADAD -moz-use-text-color;
+	border-style: solid solid none;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-width: 1px 1px medium;
+	color: #606060;
+	padding: 4px 10px;
+	margin: 0 -1px 0 -2px;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+#content h2+p.links a:hover, p.tabs a:hover {
+	background-color: #EEEEEE;
+	border-color: #ADADAD;
+	color: #606060;
+	text-decoration: none;
+}
+
+#content h2+p.links a.active, p.tabs a.active {
+	background: none repeat scroll 0 0 #FFFFFF;
+	color: #000000;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+a#t3adminerversion {
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+a#version {
+    display: none;
+}
+
+p.logout input {
+    display: none;
+}
+
+.js .column {
+	background: transparent;
+	width: 12px;
+	display: inline-block;
+	position: relative;
+	height: 8px;
+}
+
+.js .column a:hover {
+	text-decoration: none;
+}
+
+.js .column a[href*="desc%5B0%5D=1"] {
+	position: absolute;
+	left: -3px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+.js .column a[href*="desc%5B0%5D=1"]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/actions/view-list-collapse.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+.js .column a[onclick*="selectSearch"] {
+	position: absolute;
+	left: 10px;
+	width: 16px;
+	display: block;
+	overflow: hidden;
+}
+
+.js .column a[onclick*="selectSearch"]:before {
+	content: "\00a0";
+	background-image: url("/typo3/sysext/t3skin/images/icons/apps/toolbar-menu-search.png");
+	background-position: -16px 0;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	line-height: 18px;
+}
+
+.js .hidden {
+	visibility: hidden;
+}
+
+p.pages {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	height: 12px;
+	left: auto;
+	margin: 0;
+	padding: 5px;
+	position: fixed;
+	top: 25px;
+	right: 16px;
+}
+
+p.pages a {
+	border: 1px solid #7C7C7C;
+	padding: 1px 11px;
+	background-color: #E0E0E0;
+	border-radius: 2px;
+	color: #434343;
+}
+
+p.pages a:hover {
+	background-color: #C0C0C0;
+	color: #000000;
+	text-decoration: none;
+}
+
+.time {
+	color: #666666;
+}

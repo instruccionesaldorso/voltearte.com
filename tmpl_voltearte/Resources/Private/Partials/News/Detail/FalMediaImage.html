@@ -1,0 +1,19 @@
+<f:if condition="{settings.detail.media.image.lightbox}">
+	<f:then>
+		<li class="small-centered large-centered">
+			<a rel="{settings.detail.media.image.lightbox}" class="th radius lightbox" title="{mediaElement.caption}" href="{f:uri.image(src:'{mediaElement.uid}' treatIdAsReference:1 maxWidth:'800')}">
+				<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+			</a>
+		</li>
+	</f:then>
+	<f:else>
+		<li class="small-centered large-centered">
+			<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+		</li>
+	</f:else>
+</f:if>
+<f:if condition="{mediaElement.originalResource.description}">
+	<p class="news-img-caption">
+		{mediaElement.originalResource.description}
+	</p>
+</f:if>

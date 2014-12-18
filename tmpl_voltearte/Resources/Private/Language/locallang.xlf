@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+<file source-language="en" datatype="plaintext" original="messages" product-name="tmpl_voltearte">
+	<header/>
+	<body>
+		<trans-unit id="template.footer.design">
+			<source>Design</source>
+		</trans-unit>
+		<trans-unit id="validationerror_mandatory">
+			<source>This field is mandatory.</source>
+		</trans-unit>
+		<trans-unit id="captcha">
+			<source>Add the numbers in the image.</source>
+		</trans-unit>
+		<trans-unit id="date">
+			<source>Date</source>
+		</trans-unit>
+		<trans-unit id="participate">
+			<source>Participants</source>
+		</trans-unit>
+		<trans-unit id="dateFormat">
+			<source>%d.%m.%Y</source>
+		</trans-unit>
+		<trans-unit id="tx_tmplvoltearte_domain_model_orbitslide.title">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_tmplvoltearte_domain_model_orbitslide.slide_contents">
+			<source>Content</source>
+		</trans-unit>
+		<trans-unit id="F5_12">
+			<source>Foundation 12</source>
+		</trans-unit>
+		<trans-unit id="F5_3-9">
+			<source>Foundation 3 - 9</source>
+		</trans-unit>
+	</body>
+</file>
+</xliff>

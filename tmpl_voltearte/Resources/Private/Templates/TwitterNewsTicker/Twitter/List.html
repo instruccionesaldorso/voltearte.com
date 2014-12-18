@@ -1,0 +1,6 @@
+<div id="wt_twitter_newsticker">
+	<f:flashMessages class="wt_twitter_errors" style="background-color: #FBB19B; padding: 5px 30px; font-weight: bold; border: 1px solid #DC4C42; margin-bottom: 20px; font-family: arial, verdana; color: #444; font-size: 12px;" />
+	<f:for each="{tweets}" as="tweet">
+		{tweet -> f:cObject(typoscriptObjectPath: 'plugin.tx_wttwitter.settings.setup.tweets.text', currentValueKey: 'text')}
+	</f:for>
+</div>

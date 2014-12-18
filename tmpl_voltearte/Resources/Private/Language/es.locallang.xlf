@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-07-30T18:55:33Z" product-name="tmpl_voltearte" target-language="es">
+		<header/>
+		<body>
+			<trans-unit id="template.footer.design" approved="yes" xml:space="preserve">
+				<source>Design</source>
+				<target>Diseño</target>
+			</trans-unit>
+			<trans-unit id="validationerror_mandatory" approved="yes" xml:space="preserve">
+				<source>This field is mandatory.</source>
+				<target>Rellena el campo correctamente.</target>
+			</trans-unit>
+			<trans-unit id="captcha" approved="yes" xml:space="preserve">
+				<source>Add the numbers in the image.</source>
+				<target>Suma los números de la imagen.</target>
+			</trans-unit>
+			<trans-unit id="date" approved="yes" xml:space="preserve">
+				<source>Date</source>
+				<target>Fecha</target>
+			</trans-unit>
+			<trans-unit id="participate" approved="yes" xml:space="preserve">
+				<source>Participate</source>
+				<target>Participan</target>
+			</trans-unit>
+			<trans-unit id="tx_tmplvoltearte_domain_model_orbitslide.title" approved="yes" xml:space="preserve">
+				<source>Title</source>
+				<target>Título</target>
+			</trans-unit>
+			<trans-unit id="tx_tmplvoltearte_domain_model_orbitslide.slide_contents" approved="yes" xml:space="preserve">
+				<source>Content</source>
+				<target>Contenido</target>
+			</trans-unit>
+			<trans-unit id="F5_12" approved="yes" xml:space="preserve">
+				<source>Foundation 12</source>
+				<target>Foundation 12</target>
+			</trans-unit>
+			<trans-unit id="F5_3-9" approved="yes" xml:space="preserve">
+				<source>Foundation 3 - 9</source>
+				<target>Foundation 12</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

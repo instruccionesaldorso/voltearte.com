@@ -1,0 +1,15 @@
+<f:if condition="{media}">
+	<!-- media files -->
+	<ul class="small-block-grid-1 large-block-grid-3">
+		<f:for each="{media}" as="mediaElement">
+			<f:if condition="{mediaElement.type} == 0">
+				<f:render partial="Detail/MediaImage" arguments="{mediaElement: mediaElement, settings:settings}" />
+			</f:if>
+			<f:if condition="{mediaElement.type} == 1">
+				<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement, settings:settings}" />
+			</f:if>
+		</f:for>
+	</ul>
+</f:if>
+
+

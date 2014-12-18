@@ -1,0 +1,24 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div class="row">
+	<div class="small-12 large-3 columns">
+		<label for="powermail_field_{field.marker}" class="right inline">
+			<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><span class="mandatory">*</span>
+		</label>
+	</div>
+	<div class="small-12 large-9 columns">
+		<div class="powermail_captcha_outer {vh:Validation.ErrorClass(field: '{field}')}">
+			<f:form.textfield
+				id="powermail_field_{field.marker}"
+				property="{field.marker}"
+				value=""
+				class="powermail_field powermail_captcha validate[required] {vh:Validation.ErrorClass(field: '{field}', class: 'powermail_field_error')}"
+				placeholder="{f:translate(key: 'LLL:EXT:tmpl_voltearte/Resources/Private/Language/locallang.xml:captcha')}"
+				required="required" />
+			<small class="error"><f:translate key="LLL:EXT:tmpl_voltearte/Resources/Private/Language/locallang.xml:validationerror_mandatory"/></small>
+			<p>
+			<img src="{vh:Validation.Captcha()}" alt="captcha" class="powermail_captchaimage" id="powermail_captchaimage" />
+			</p>
+		</div>
+	</div>
+</div>

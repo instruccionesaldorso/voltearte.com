@@ -1,0 +1,15 @@
+<f:if condition="{media}">
+	<!-- fal media files -->
+	<ul class="small-block-grid-1 large-block-grid-3">
+		<f:for each="{media}" as="mediaElement">
+			<f:if condition="{mediaElement.originalResource.type} == 2">
+				<f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+			</f:if>
+			<f:if condition="{mediaElement.originalResource.type} == 4">
+				<f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+			</f:if>
+		</f:for>
+	</ul>
+</f:if>
+
+

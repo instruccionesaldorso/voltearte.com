@@ -1,0 +1,9 @@
+<ul data-orbit data-options="variable_height:false;slide_number:false;animation:fade;">
+	<f:for each="{slides}" as="slide">
+		<li>
+			<f:for each="{slide.records}" as="record">
+				<f:format.raw>{record}</f:format.raw>
+			</f:for>
+		</li>
+	</f:for>
+</ul>
